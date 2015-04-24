@@ -1,0 +1,24 @@
+<div>
+	<span class="headingFormat">Market news</span>
+</div>
+<div class="row"><hr/></div>
+<table class="noBorder" style="width:100%;">
+	<tbody ng-repeat="item in marketNews">
+		<tr>
+			<td class="row-headings-market-news">{{item.heading}}</td>
+		</tr>
+		<tr ng-repeat="row in item.details">
+			<td class="row-data-market-news-date white-background">{{row.date}}</td>
+			<td class="row-data-market-news-description white-background">{{row.description}}</td>
+		</tr>
+		<tr>
+		<td class="white-background"></td>
+		<td class="white-background">
+		<div class="details-bluetext left">View more</div>
+		</td>
+		</tr>
+		<tr>
+		<td class="white-background" colspan="2"><hr/></td>
+		</tr>
+	</tbody>
+</table>
